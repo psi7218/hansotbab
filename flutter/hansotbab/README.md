@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db402ccf08a9416e64164d3319f72ed293a9d6346244de58d39c62088001d3f7
-size 552
+# hansotbab
+
+flutter 3.19.2
+android studio 2023 1.1.28
+
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+
