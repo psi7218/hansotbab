@@ -6,12 +6,12 @@ import lombok.Getter;
 public class WishlistLikeRequestDTO {
 
     private final Long userId;
-    private final Long fridgeId;
     private final Long wishlistId;
+    private final boolean isLikeWishlist;
 
-    public WishlistLikeRequestDTO(Long userId, Long fridgeId, Long wishlistId){
+    public WishlistLikeRequestDTO(Long userId, Long wishlistId,boolean isLikeWishlist){
         this.userId = userId;
-        this.fridgeId = fridgeId;
         this.wishlistId = wishlistId;
+        this.isLikeWishlist = isLikeWishlist();
     }
 }
