@@ -1,17 +1,3 @@
-package com.b209.hansotbab.wishlist.dto.request;
-
-import lombok.Builder;
-import lombok.Getter;
-
-@Getter
-public class WishlistRequestDTO {
-
-    private final Long userId;
-    private final String wishlistContent;
-
-    @Builder
-    public WishlistRequestDTO(Long userId, String wishlistContent){
-        this.userId = userId;
-        this.wishlistContent = wishlistContent;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9406dfafbcc439b73276b8868c3211f08e91c11779ac10226d339c2544e44d4
+size 738
