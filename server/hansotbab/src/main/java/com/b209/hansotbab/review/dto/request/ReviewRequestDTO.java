@@ -1,20 +1,3 @@
-package com.b209.hansotbab.review.dto.request;
-
-import lombok.Builder;
-import lombok.Getter;
-
-@Getter
-public class ReviewRequestDTO {
-
-    private Long userId;
-    private Long productId;
-    private String reviewContent;
-
-    @Builder
-    public ReviewRequestDTO(Long userId, Long productId, String reviewContent){
-        this.userId = userId;
-        this.productId = productId;
-        this.reviewContent = reviewContent;
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:70dcdd596b506e379794e66e6ecf5e393cf0758c25f82412a3ef6b87ccaaf900
+size 857
