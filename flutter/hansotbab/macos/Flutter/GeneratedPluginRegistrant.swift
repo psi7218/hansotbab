@@ -1,16 +1,3 @@
-//
-//  Generated file. Do not edit.
-//
-
-import FlutterMacOS
-import Foundation
-
-import file_selector_macos
-import location
-import path_provider_foundation
-
-func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  FileSelectorPlugin.register(with: registry.registrar(forPlugin: "FileSelectorPlugin"))
-  LocationPlugin.register(with: registry.registrar(forPlugin: "LocationPlugin"))
-  PathProviderPlugin.register(with: registry.registrar(forPlugin: "PathProviderPlugin"))
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c5a5a8d5f420bb856ba881a40c89a2bd5bf55294ae5fada861278cc3c76dfa00
+size 1014
