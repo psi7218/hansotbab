@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92da31b9a2b68a59e85944120cf62ded2b5e28880b961cc833b339e35b91447b
-size 269
+{
+  "file_generated_by": "FlutterFire CLI",
+  "purpose": "FirebaseAppID & ProjectID for this Firebase app in this directory",
+  "GOOGLE_APP_ID": "1:714780267237:ios:a5ce30157f5fd5aa0e7a0c",
+  "FIREBASE_PROJECT_ID": "hansotbab-alarm",
+  "GCM_SENDER_ID": "714780267237"
+}
