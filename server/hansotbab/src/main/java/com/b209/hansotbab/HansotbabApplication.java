@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68535064b5c41a339221a9588a4a02e101e53445a7425ea96fd8958041b12404
-size 329
+package com.b209.hansotbab;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HansotbabApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HansotbabApplication.class, args);
+    }
+
+}
