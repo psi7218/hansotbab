@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:602c6656b08853684cace2dcbb84672fcc5bbd7b6f9cce334d79953a98a55228
-size 498
+package com.b209.hansotbab.user.dto.request;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.io.Serializable;
+
+@Getter
+public class AdminReqestDTO implements Serializable {
+
+    private final String userName;
+    private final String userPhone;
+    private final Long fridgeId;
+
+    @Builder
+    public AdminReqestDTO(String name, String phone, Long fridgeId) {
+        this.userName = name;
+        this.userPhone = phone;
+        this.fridgeId = fridgeId;
+    }
+}

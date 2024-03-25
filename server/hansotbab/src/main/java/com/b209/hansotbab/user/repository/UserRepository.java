@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0696a4cc2ce84a6b2bbb2fb592545eeb56d1621721e28df875c8a9ad71e77f9e
-size 376
+package com.b209.hansotbab.user.repository;
+
+import com.b209.hansotbab.user.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByUserIdAndIsDeleteIsFalse(Long userId);
+}
