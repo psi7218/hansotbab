@@ -2,7 +2,6 @@ package com.b209.hansotbab.fridge.entity;
 
 public enum ProductCategory {
 
-    VEGETABLE, FRUIT, SIDEDISH, PROCESSED, DRINK,
-    BREAD, RICECAKE, SNACK, RICE, ETC
-
+    VEGETABLE, FRUIT, DRINK, SAUCE, DIARY,
+    MEAT, SNACK, PROCESSED, RICE, SIDEDISH, ETC
 }
