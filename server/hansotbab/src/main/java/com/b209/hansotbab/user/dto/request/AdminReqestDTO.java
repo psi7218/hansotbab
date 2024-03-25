@@ -4,18 +4,17 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 @Getter
 public class AdminReqestDTO implements Serializable {
 
-    private final String userName;
-    private final String userPhone;
+    private final String uuid;
     private final Long fridgeId;
 
     @Builder
-    public AdminReqestDTO(String name, String phone, Long fridgeId) {
-        this.userName = name;
-        this.userPhone = phone;
+    public AdminReqestDTO(String uuid,Long fridgeId) {
+        this.uuid = uuid;
         this.fridgeId = fridgeId;
     }
 }
