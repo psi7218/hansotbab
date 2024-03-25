@@ -1,17 +1,3 @@
-import 'package:flutter/material.dart';
-
-class LoginState with ChangeNotifier {
-  bool _isLoggedIn = false;
-
-  bool get isLoggedIn => _isLoggedIn;
-
-  void login() {
-    _isLoggedIn = true;
-    notifyListeners(); // 상태가 변경되었음을 알림
-  }
-
-  void logout() {
-    _isLoggedIn = false;
-    notifyListeners(); // 상태가 변경되었음을 알림
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:170d902330b0429a4f85b0967a22e0897f331626bef22ebb59f29d6b7d584059
+size 367
