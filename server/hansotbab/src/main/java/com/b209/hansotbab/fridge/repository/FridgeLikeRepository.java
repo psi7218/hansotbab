@@ -6,11 +6,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 public interface FridgeLikeRepository extends JpaRepository<FridgeLike, Long> {
 
 
-    Optional<FridgeLike> findByUserUserIdAndFridgeFridgeId(Long loginUserId, Long fridgeId);
+    Optional<FridgeLike> findByUserUuidAndFridgeFridgeId(UUID loginUuid, Long fridgeId);
 
-    List<FridgeLike> findByUserUserId(Long loginUserId);
+    List<FridgeLike> findByUserUuid(UUID loginUuid);
 }
