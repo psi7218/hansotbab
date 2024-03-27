@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d62402bbf8f3d735698f9f379720c92e9c82f0ef2fe6d9a444c56a1dfb1ff6b0
-size 64
+{
+    "editor.mouseWheelZoom": true,
+    "editor.fontSize": 20
+}
