@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78f5ff91ce600e91a1d50cadc9ffae67e3bf156ce7d81e149b5ae32794d8a61f
-size 429
+package com.b209.hansotbab.fridge.repository;
+
+
+import com.b209.hansotbab.fridge.entity.FridgeLike;
+import com.b209.hansotbab.fridge.entity.ProductBring;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+public interface ProductBringRepository extends JpaRepository<ProductBring, Long> {
+    Optional<ProductBring> findByUserUuidAndProductProductId(UUID loginUuid, Long productId);
+}
