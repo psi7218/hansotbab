@@ -1,4 +1,6 @@
 package com.b209.hansotbab.user.exception;
 
-public class RegisterFailedException extends RuntimeException {
+import java.sql.SQLException;
+
+public class RegisterFailedException extends SQLException {
 }
