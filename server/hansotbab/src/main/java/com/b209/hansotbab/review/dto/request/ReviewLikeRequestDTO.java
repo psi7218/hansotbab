@@ -5,12 +5,12 @@ import lombok.Getter;
 @Getter
 public class ReviewLikeRequestDTO {
 
-    private final Long userId;
+    private final String uuid;
     private final Long fridgeId;
     private final Long reviewId;
 
-    public ReviewLikeRequestDTO(Long userId, Long fridgeId, Long reviewId){
-        this.userId = userId;
+    public ReviewLikeRequestDTO(String uuid, Long fridgeId, Long reviewId){
+        this.uuid = uuid;
         this.fridgeId = fridgeId;
         this.reviewId = reviewId;
     }
