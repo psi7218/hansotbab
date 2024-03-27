@@ -13,7 +13,7 @@ public class AdminReqestDTO implements Serializable {
     private final Long fridgeId;
 
     @Builder
-    public AdminReqestDTO(String uuid,Long fridgeId) {
+    public AdminReqestDTO(String uuid, Long fridgeId) {
         this.uuid = uuid;
         this.fridgeId = fridgeId;
     }
