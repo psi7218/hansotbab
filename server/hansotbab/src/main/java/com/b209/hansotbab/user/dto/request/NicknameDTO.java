@@ -4,16 +4,17 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 @Getter
 public class NicknameDTO implements Serializable {
 
-    private final Long userId;
+    private final String email;
     private final String newNickname;
 
     @Builder
-    public NicknameDTO(Long userId, String newNickname) {
-        this.userId = userId;
+    public NicknameDTO(String email, String newNickname) {
+        this.email = email;
         this.newNickname = newNickname;
     }
 }
