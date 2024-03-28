@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6849673a6cf82abcdb953e75ad68c33edecd8396fe8458de96d5524deb39f53
-size 458
+package com.b209.hansotbab.user.dto.response;
+
+import lombok.Getter;
+
+import java.io.Serializable;
+
+@Getter
+public class TokenDTO implements Serializable {
+
+    private final String uuid;
+    private final String accessToken;
+    private final String refreshToken;
+
+    public TokenDTO(String uuid, String accessToken, String refreshToken) {
+        this.uuid = uuid;
+        this.accessToken = accessToken;
+        this.refreshToken = refreshToken;
+    }
+}

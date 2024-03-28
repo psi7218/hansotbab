@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09810e2c7a4eeac020fff1a89bf7d3725fd45730de0341996eecd9e555fa0d96
-size 368
+package com.b209.hansotbab.user.dto.request;
+
+import lombok.Getter;
+
+import java.io.Serializable;
+import java.util.UUID;
+
+@Getter
+public class LoginRequestDTO implements Serializable {
+
+    private final String uuid;
+    private final String email;
+
+    public LoginRequestDTO(String uuid, String email) {
+        this.uuid = uuid;
+        this.email = email;
+    }
+}
