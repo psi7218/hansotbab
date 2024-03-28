@@ -2,5 +2,5 @@ package com.b209.hansotbab.fridge.entity;
 
 public enum ProductCondition {
 
-    AMBIENT, FRIDGE, FREEZE
+    실온보관, 냉장보관, 냉동보관
 }
