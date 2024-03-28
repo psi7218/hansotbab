@@ -5,13 +5,13 @@ import lombok.Getter;
 @Getter
 public class WishlistLikeRequestDTO {
 
-    private final Long userId;
+    private final String uuid;
     private final Long wishlistId;
     private final boolean isLikeWishlist;
 
-    public WishlistLikeRequestDTO(Long userId, Long wishlistId,boolean isLikeWishlist){
-        this.userId = userId;
+    public WishlistLikeRequestDTO(String uuid, Long wishlistId, boolean isLikeWishlist){
+        this.uuid = uuid;
         this.wishlistId = wishlistId;
-        this.isLikeWishlist = isLikeWishlist();
+        this.isLikeWishlist = isLikeWishlist;
     }
 }
