@@ -1,7 +1,3 @@
-package com.b209.hansotbab.fridge.entity;
-
-public enum ProductCategory {
-
-    채소, 과일, 음료, 소스_조미료, 유제품, 축산_계란,
-    간식류, 가공식품, 쌀_잡곡류, 밥_반찬류, 기타
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d6e8c7e58a807fda9cdd7b34a56afdf8fae5d7bfb35d43924eaf09ce560cd37
+size 214

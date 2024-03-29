@@ -1,20 +1,3 @@
-package com.b209.hansotbab.user.dto.request;
-
-import lombok.Builder;
-import lombok.Getter;
-
-import java.io.Serializable;
-import java.util.UUID;
-
-@Getter
-public class AdminReqestDTO implements Serializable {
-
-    private final String uuid;
-    private final Long fridgeId;
-
-    @Builder
-    public AdminReqestDTO(String uuid, Long fridgeId) {
-        this.uuid = uuid;
-        this.fridgeId = fridgeId;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:38a654a662c9b960e844496ba8cbc19ec595907a489e2c042659bb4d2fa2bf8d
+size 430
