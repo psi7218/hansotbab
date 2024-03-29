@@ -1,15 +1,3 @@
-package com.b209.hansotbab.review.repository;
-
-import com.b209.hansotbab.fridge.entity.Fridge;
-import com.b209.hansotbab.review.entity.Review;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-import java.util.Optional;
-
-public interface ReviewRepository extends JpaRepository<Review, Long> {
-
-    List<Review> findAllByFridge(Fridge fridge);
-
-    Optional<Review> findByReviewIdAndIsDeleteFalse(Long reviewId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0485acb36b8846cb01ce200bfc173eb09a56d646bc1953f4ccaad9a7bedc26f
+size 538
