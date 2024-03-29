@@ -1,19 +1,3 @@
-import 'package:flutter/material.dart';
-
-class Favorite extends StatelessWidget {
-  const Favorite({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        padding: const EdgeInsets.all(30),
-        child: const Row(
-          children: [
-            Text(
-              '즐겨찾기',
-              style: TextStyle(fontSize: 20),
-            ),
-          ],
-        ));
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:06da03ffeb5f9c76910b0a19bcc110cf195eaa8634e7f0b01906166d7104120f
+size 418
