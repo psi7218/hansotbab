@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ec13f8dfb0cb20a193ba699cdc5ed39585de590b995f0991ebb961929f96b8d
-size 436
+package com.b209.hansotbab.wishlist.dto.request;
+
+import lombok.Getter;
+
+@Getter
+public class WishlistLikeRequestDTO {
+
+    private final String uuid;
+    private final Long wishlistId;
+    private final boolean isLikeWishlist;
+
+    public WishlistLikeRequestDTO(String uuid, Long wishlistId, boolean isLikeWishlist){
+        this.uuid = uuid;
+        this.wishlistId = wishlistId;
+        this.isLikeWishlist = isLikeWishlist;
+    }
+}
