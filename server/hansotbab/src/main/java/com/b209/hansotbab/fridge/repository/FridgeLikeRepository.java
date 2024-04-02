@@ -1,17 +1,3 @@
-package com.b209.hansotbab.fridge.repository;
-
-
-import com.b209.hansotbab.fridge.entity.FridgeLike;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-
-public interface FridgeLikeRepository extends JpaRepository<FridgeLike, Long> {
-
-
-    Optional<FridgeLike> findByUserUuidAndFridgeFridgeId(UUID loginUuid, Long fridgeId);
-
-    List<FridgeLike> findByUserUuid(UUID loginUuid);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b0d8295ffe82c4232603805c2b969aee137aee14c8d060b7ff6e2e0d14a997e
+size 518
