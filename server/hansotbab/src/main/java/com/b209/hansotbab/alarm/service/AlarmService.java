@@ -10,4 +10,6 @@ public interface AlarmService {
     void createFcmToken(AlarmUserRequestDTO alarmUserRequestDTO);
 
     void sendAlarmByFridge(Long fridgeId);
+
+    void sendAlarmByProduct(Long productId);
 }
