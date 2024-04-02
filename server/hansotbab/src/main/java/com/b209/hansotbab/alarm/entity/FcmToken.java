@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:349608f72454cb026dff5ce6a0b9bf24df62b28914cf639ea567ecce5651b8c8
-size 543
+package com.b209.hansotbab.alarm.entity;
+
+import jakarta.persistence.*;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+@Entity
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class FcmToken {
+    @Id
+    private String email;
+
+    @Column(nullable = false)
+    private String fcmToken;
+
+    @Builder
+    public FcmToken(String email, String fcmToken) {
+        this.email = email;
+        this.fcmToken = fcmToken;
+    }
+}
