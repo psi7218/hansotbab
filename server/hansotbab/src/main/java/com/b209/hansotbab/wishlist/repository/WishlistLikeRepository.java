@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9742ad0e4adcb3aabb70d9314ad65f724a17ffde73d76b1ea78bfdf010143004
-size 351
+package com.b209.hansotbab.wishlist.repository;
+
+import com.b209.hansotbab.wishlist.entity.WishlistLike;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.UUID;
+
+public interface WishlistLikeRepository extends JpaRepository<WishlistLike, Long> {
+    List<WishlistLike> findByUserUuid(UUID uuid);
+}
