@@ -1,0 +1,15 @@
+# Created by https://www.toptal.com/developers/gitignore/api/cuda
+# Edit at https://www.toptal.com/developers/gitignore?templates=cuda
+
+### CUDA ###
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+*.deb
+*.pyc
+__pycache__/
+
+# End of https://www.toptal.com/developers/gitignore/api/cuda
