@@ -1,21 +1,3 @@
-version: "3.7"
-  
-services:
-  fastapi:
-    image: fastapi
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-    ports:
-      - 8000:8000
-    build:
-      context: . # Dockerfile locate
-      dockerfile: Dockerfile
-    volumes:
-      - ./app:/code/app
-
-        #command: nvidia-smi
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [gpu]
+version https://git-lfs.github.com/spec/v1
+oid sha256:97733787edde63d83ad23d7d8c66c8fd055e05d9b3708072785ed131e4508987
+size 434
