@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7a6f114dbfbd449d93650a246451005ae0db90c0aa8517f233105e681326c30
-size 564
+import torch.nn as nn
+from torch.cuda.amp import autocast
+
+from timm.models import create_model
+
+
+class LotteNet(nn.Module):
+    def __init__(self, cfg):
+        super(LotteNet, self).__init__()
+        self.model = create_model(
+            model_name=cfg.model.model_name,
+            pretrained=cfg.model.pretrained,
+            num_classes=cfg.model.num_classes,
+            drop_rate=cfg.model.drop_rate,
+            drop_path_rate=cfg.model.drop_path,
+        )
+
+    @autocast()
+    def forward(self, x):
+        output = self.model(x)
+        return output

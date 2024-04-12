@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5823ae85749275491539f91e5877bba1ecd4338c23d74fd4f967e7fb7ae338d6
-size 520
+system:
+  save_step: 5
+
+model:
+  model_name: 'efficientnet_b0'
+  pretrained: True
+  num_classes: 10038
+  drop_rate: 0.2
+  drop_path: 0.2
+
+dataset:
+  pre_transform: True
+  batch_size: 768
+  scale: (0.6, 1.0)
+  reprob: 0.2
+  remode: 'pixel'
+  aa: 'rand-m9-mstd0.5'
+  train_interpolation: 'random'
+  workers: 20
+
+optimizer:
+  opt: 'rmsproptf'
+  lr: .048
+  opt_eps: .001
+  momentum: 0.9
+  weight_decay: 1e-5
+
+scheduler:
+  sched: 'step'
+  epochs: 50
+  decay_epochs: 2.4
+  decay_rate: .97
+  warmup_lr: 1e-6
+  warmup_epochs: 3

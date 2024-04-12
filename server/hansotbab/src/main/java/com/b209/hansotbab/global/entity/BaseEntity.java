@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5da0486d38206452dbaedd567623c62fc588914d462fa19a7b085659b721b865
-size 570
+package com.b209.hansotbab.global.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import org.hibernate.annotations.ColumnDefault;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+@Getter
+@MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
+public class BaseEntity extends BaseTimeEntity {
+    //추가 상속 컬럼
+    @ColumnDefault("false")
+    @Column(columnDefinition = "TINYINT(1)")
+    protected boolean isDelete;
+}
+

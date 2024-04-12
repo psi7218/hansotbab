@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0fc6b4499aedfff40e3b59c0da8a02c637258650dc041e441374eed2ca5e74c5
-size 583
+class FridgeModel {
+  final int fridgeId;
+  final String fridgeLocationName;
+  final String fridgeLocationAddress;
+  // final String donated;
+
+  FridgeModel({
+    required this.fridgeId,
+    required this.fridgeLocationName,
+    required this.fridgeLocationAddress,
+    // required this.donated,
+  });
+
+  factory FridgeModel.fromJson(Map<String, dynamic> json) {
+    return FridgeModel(
+      fridgeId: json['fridgeId'],
+      fridgeLocationName: json['fridgeLocationName'],
+      fridgeLocationAddress: json['fridgeLocationAddress'],
+      // donated: json['donated'],
+    );
+  }
+}

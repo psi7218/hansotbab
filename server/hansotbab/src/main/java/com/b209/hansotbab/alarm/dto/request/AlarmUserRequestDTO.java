@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4488fc03bce61ea309a7d1b7ff9419e7f6ea6d32eed694b5e64eaa478754918
-size 636
+package com.b209.hansotbab.alarm.dto.request;
+
+import com.b209.hansotbab.alarm.entity.FcmToken;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+public class AlarmUserRequestDTO {
+    private String email;
+    private String fcmToken;
+
+    @Builder
+    public AlarmUserRequestDTO(String email, String fcmToken){
+        this.email = email;
+        this.fcmToken = fcmToken;
+    }
+
+    public FcmToken toFcmToken(String email, String fcmToken){
+        return FcmToken.builder()
+                .email(email)
+                .fcmToken(fcmToken)
+                .build();
+    }
+
+}

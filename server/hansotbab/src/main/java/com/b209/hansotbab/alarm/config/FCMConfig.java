@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f48d936c1de5998b914db4016c30386b0cb086022bb230cedfddb76b9cb57725
-size 1420
+package com.b209.hansotbab.alarm.config;
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.messaging.FirebaseMessaging;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+@Configuration
+public class FCMConfig {
+    @Bean
+    FirebaseMessaging firebaseMessaging() throws IOException {
+        ClassPathResource resource = new ClassPathResource("firebase/firebase_service_key.json");
+
+        InputStream refreshToken = resource.getInputStream();
+
+        FirebaseApp firebaseApp = null;
+        List<FirebaseApp> firebaseAppList = FirebaseApp.getApps();
+
+        if (firebaseAppList != null && !firebaseAppList.isEmpty()) {
+            for (FirebaseApp app : firebaseAppList) {
+                if (app.getName().equals(FirebaseApp.DEFAULT_APP_NAME)) {
+                    firebaseApp = app;
+                }
+            }
+        } else {
+            FirebaseOptions options = FirebaseOptions.builder().setCredentials(GoogleCredentials.fromStream(refreshToken)).build();
+
+            firebaseApp = FirebaseApp.initializeApp(options);
+        }
+        return FirebaseMessaging.getInstance(firebaseApp);
+
+    }
+}

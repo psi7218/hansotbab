@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5fd4e446edca903866c725c7be64f838203457b9d23e216cf57b9ce065af051
-size 959
+package com.b209.hansotbab.user.handler;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
+import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+
+@Slf4j
+@Component
+public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint {
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response,
+                         AuthenticationException authException) throws IOException, ServletException {
+
+        log.error("Not Authenticated Request", authException);
+        log.error("Request Uri : {}", request.getRequestURI());
+
+        response.sendError(401, authException.getLocalizedMessage());
+    }
+}

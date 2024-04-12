@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9406dfafbcc439b73276b8868c3211f08e91c11779ac10226d339c2544e44d4
-size 738
+package com.b209.hansotbab.wishlist.dto.request;
+
+import com.b209.hansotbab.fridge.entity.Fridge;
+import com.b209.hansotbab.user.entity.User;
+import com.b209.hansotbab.wishlist.entity.Wishlist;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+public class WishlistRequestDTO {
+
+    private String wishlistContent;
+
+    @Builder
+    public WishlistRequestDTO(String wishlistContent){
+        this.wishlistContent = wishlistContent;
+    }
+
+    public Wishlist toWishlist(Fridge fridge, User user) {
+        return Wishlist.builder()
+                .user(user)
+                .wishlistContent(this.wishlistContent)
+                .fridge(fridge)
+                .build();
+    }
+
+}

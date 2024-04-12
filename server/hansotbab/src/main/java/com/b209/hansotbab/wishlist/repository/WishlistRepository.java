@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e0c3c666f846bde8e501d56939ecb082c4a662ccd95e2e3219924347bf3beab
-size 590
+package com.b209.hansotbab.wishlist.repository;
+
+import com.b209.hansotbab.fridge.entity.Fridge;
+import com.b209.hansotbab.user.entity.User;
+import com.b209.hansotbab.wishlist.entity.Wishlist;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface WishlistRepository extends JpaRepository<Wishlist, Long> {
+
+    List<Wishlist> findAllByFridgeAndIsDeleteIsFalse(Fridge fridge);
+    Optional<Wishlist> findByWishlistIdAndIsDeleteFalse(Long wishlistId);
+}

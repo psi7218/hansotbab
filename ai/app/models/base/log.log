@@ -1,3 +1,153 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4f0cfc9750523967c6d6f3356defc3055d62300b1ac966009aa4afc27b1bb5d
-size 17070
+2021-03-16 09:50:15 KST+0900: Epoch 0/50 Complete | time per epoch: 0:27:43 | total eta: 22:38:15
+2021-03-16 09:50:15 KST+0900: Train Loss: 9.2172 | Train Top1 Accuracy: 0.0091 | Train Top5 Accuracy: 0.0498
+2021-03-16 09:52:15 KST+0900: Validation Loss: 9.2157 | Validation Top1 Accuracy: 0.0106 | Validation Top5 Accuracy: 0.0572
+2021-03-16 10:15:33 KST+0900: Epoch 1/50 Complete | time per epoch: 0:26:30 | total eta: 21:12:33
+2021-03-16 10:15:33 KST+0900: Train Loss: 2.1940 | Train Top1 Accuracy: 56.2285 | Train Top5 Accuracy: 75.9450
+2021-03-16 10:17:45 KST+0900: Validation Loss: 0.4367 | Validation Top1 Accuracy: 87.1895 | Validation Top5 Accuracy: 98.1333
+2021-03-16 10:41:03 KST+0900: Epoch 2/50 Complete | time per epoch: 0:26:10 | total eta: 20:30:16
+2021-03-16 10:41:03 KST+0900: Train Loss: 1.2356 | Train Top1 Accuracy: 70.8325 | Train Top5 Accuracy: 88.7678
+2021-03-16 10:43:15 KST+0900: Validation Loss: 0.3629 | Validation Top1 Accuracy: 89.4132 | Validation Top5 Accuracy: 98.5456
+2021-03-16 11:06:28 KST+0900: Epoch 3/50 Complete | time per epoch: 0:25:59 | total eta: 19:55:21
+2021-03-16 11:06:28 KST+0900: Train Loss: 1.0834 | Train Top1 Accuracy: 74.1361 | Train Top5 Accuracy: 90.6633
+2021-03-16 11:08:38 KST+0900: Validation Loss: 0.3700 | Validation Top1 Accuracy: 89.2814 | Validation Top5 Accuracy: 98.7620
+2021-03-16 11:31:44 KST+0900: Epoch 4/50 Complete | time per epoch: 0:25:50 | total eta: 19:22:55
+2021-03-16 11:31:44 KST+0900: Train Loss: 0.9139 | Train Top1 Accuracy: 77.6541 | Train Top5 Accuracy: 92.5506
+2021-03-16 11:33:54 KST+0900: Validation Loss: 0.3034 | Validation Top1 Accuracy: 91.0202 | Validation Top5 Accuracy: 99.0297
+2021-03-16 11:57:08 KST+0900: Epoch 5/50 Complete | time per epoch: 0:25:46 | total eta: 18:53:50
+2021-03-16 11:57:08 KST+0900: Train Loss: 0.8412 | Train Top1 Accuracy: 79.2680 | Train Top5 Accuracy: 93.3434
+2021-03-16 11:59:18 KST+0900: Validation Loss: 0.3039 | Validation Top1 Accuracy: 91.1472 | Validation Top5 Accuracy: 98.8837
+2021-03-16 12:22:24 KST+0900: Epoch 6/50 Complete | time per epoch: 0:25:41 | total eta: 18:24:58
+2021-03-16 12:22:24 KST+0900: Train Loss: 0.8151 | Train Top1 Accuracy: 79.8764 | Train Top5 Accuracy: 93.6673
+2021-03-16 12:24:32 KST+0900: Validation Loss: 0.2685 | Validation Top1 Accuracy: 91.9017 | Validation Top5 Accuracy: 99.2856
+2021-03-16 12:47:40 KST+0900: Epoch 7/50 Complete | time per epoch: 0:25:38 | total eta: 17:56:59
+2021-03-16 12:47:40 KST+0900: Train Loss: 0.7979 | Train Top1 Accuracy: 80.2567 | Train Top5 Accuracy: 93.8351
+2021-03-16 12:49:47 KST+0900: Validation Loss: 0.3560 | Validation Top1 Accuracy: 90.2169 | Validation Top5 Accuracy: 98.4221
+2021-03-16 13:12:51 KST+0900: Epoch 8/50 Complete | time per epoch: 0:25:35 | total eta: 17:29:14
+2021-03-16 13:12:51 KST+0900: Train Loss: 0.7662 | Train Top1 Accuracy: 80.9750 | Train Top5 Accuracy: 94.1547
+2021-03-16 13:14:57 KST+0900: Validation Loss: 0.2662 | Validation Top1 Accuracy: 92.0859 | Validation Top5 Accuracy: 99.1985
+2021-03-16 13:38:07 KST+0900: Epoch 9/50 Complete | time per epoch: 0:25:33 | total eta: 17:2:21
+2021-03-16 13:38:07 KST+0900: Train Loss: 0.7590 | Train Top1 Accuracy: 81.1539 | Train Top5 Accuracy: 94.2598
+2021-03-16 13:40:09 KST+0900: Validation Loss: 0.3441 | Validation Top1 Accuracy: 90.5818 | Validation Top5 Accuracy: 98.4551
+2021-03-16 14:03:25 KST+0900: Epoch 10/50 Complete | time per epoch: 0:25:32 | total eta: 16:35:53
+2021-03-16 14:03:25 KST+0900: Train Loss: 0.7373 | Train Top1 Accuracy: 81.6179 | Train Top5 Accuracy: 94.4857
+2021-03-16 14:05:26 KST+0900: Validation Loss: 0.2416 | Validation Top1 Accuracy: 92.9023 | Validation Top5 Accuracy: 99.2957
+2021-03-16 14:28:42 KST+0900: Epoch 11/50 Complete | time per epoch: 0:25:30 | total eta: 16:9:34
+2021-03-16 14:28:42 KST+0900: Train Loss: 0.7301 | Train Top1 Accuracy: 81.8335 | Train Top5 Accuracy: 94.5426
+2021-03-16 14:30:41 KST+0900: Validation Loss: 0.2963 | Validation Top1 Accuracy: 91.4858 | Validation Top5 Accuracy: 98.9783
+2021-03-16 14:53:52 KST+0900: Epoch 12/50 Complete | time per epoch: 0:25:29 | total eta: 15:43:2
+2021-03-16 14:53:52 KST+0900: Train Loss: 0.7113 | Train Top1 Accuracy: 82.2143 | Train Top5 Accuracy: 94.7447
+2021-03-16 14:55:51 KST+0900: Validation Loss: 0.3403 | Validation Top1 Accuracy: 90.5642 | Validation Top5 Accuracy: 98.5259
+2021-03-16 15:19:02 KST+0900: Epoch 13/50 Complete | time per epoch: 0:25:27 | total eta: 15:16:45
+2021-03-16 15:19:02 KST+0900: Train Loss: 0.7058 | Train Top1 Accuracy: 82.3651 | Train Top5 Accuracy: 94.8075
+2021-03-16 15:20:55 KST+0900: Validation Loss: 0.2068 | Validation Top1 Accuracy: 93.7667 | Validation Top5 Accuracy: 99.5085
+2021-03-16 15:44:05 KST+0900: Epoch 14/50 Complete | time per epoch: 0:25:26 | total eta: 14:50:19
+2021-03-16 15:44:05 KST+0900: Train Loss: 0.7035 | Train Top1 Accuracy: 82.4603 | Train Top5 Accuracy: 94.8212
+2021-03-16 15:45:56 KST+0900: Validation Loss: 0.2594 | Validation Top1 Accuracy: 92.3092 | Validation Top5 Accuracy: 99.2768
+2021-03-16 16:09:08 KST+0900: Epoch 15/50 Complete | time per epoch: 0:25:24 | total eta: 14:24:1
+2021-03-16 16:09:08 KST+0900: Train Loss: 0.6850 | Train Top1 Accuracy: 82.8575 | Train Top5 Accuracy: 94.9906
+2021-03-16 16:10:58 KST+0900: Validation Loss: 0.1953 | Validation Top1 Accuracy: 94.0973 | Validation Top5 Accuracy: 99.5265
+2021-03-16 16:34:12 KST+0900: Epoch 16/50 Complete | time per epoch: 0:25:23 | total eta: 13:57:58
+2021-03-16 16:34:12 KST+0900: Train Loss: 0.6840 | Train Top1 Accuracy: 82.8681 | Train Top5 Accuracy: 95.0315
+2021-03-16 16:36:07 KST+0900: Validation Loss: 0.2241 | Validation Top1 Accuracy: 93.3776 | Validation Top5 Accuracy: 99.3436
+2021-03-16 16:59:38 KST+0900: Epoch 17/50 Complete | time per epoch: 0:25:23 | total eta: 13:32:38
+2021-03-16 16:59:38 KST+0900: Train Loss: 0.6658 | Train Top1 Accuracy: 83.2514 | Train Top5 Accuracy: 95.1837
+2021-03-16 17:01:29 KST+0900: Validation Loss: 0.2406 | Validation Top1 Accuracy: 92.9260 | Validation Top5 Accuracy: 99.2865
+2021-03-16 17:24:55 KST+0900: Epoch 18/50 Complete | time per epoch: 0:25:23 | total eta: 13:7:4
+2021-03-16 17:24:55 KST+0900: Train Loss: 0.6654 | Train Top1 Accuracy: 83.2873 | Train Top5 Accuracy: 95.1934
+2021-03-16 17:26:45 KST+0900: Validation Loss: 0.2182 | Validation Top1 Accuracy: 93.3855 | Validation Top5 Accuracy: 99.4280
+2021-03-16 17:49:59 KST+0900: Epoch 19/50 Complete | time per epoch: 0:25:22 | total eta: 12:41:11
+2021-03-16 17:49:59 KST+0900: Train Loss: 0.6647 | Train Top1 Accuracy: 83.3129 | Train Top5 Accuracy: 95.2031
+2021-03-16 17:51:48 KST+0900: Validation Loss: 0.2114 | Validation Top1 Accuracy: 93.7196 | Validation Top5 Accuracy: 99.4201
+2021-03-16 18:15:02 KST+0900: Epoch 20/50 Complete | time per epoch: 0:25:21 | total eta: 12:15:22
+2021-03-16 18:15:02 KST+0900: Train Loss: 0.6459 | Train Top1 Accuracy: 83.7482 | Train Top5 Accuracy: 95.3742
+2021-03-16 18:16:54 KST+0900: Validation Loss: 0.1848 | Validation Top1 Accuracy: 94.3786 | Validation Top5 Accuracy: 99.5713
+2021-03-16 18:40:09 KST+0900: Epoch 21/50 Complete | time per epoch: 0:25:20 | total eta: 11:49:42
+2021-03-16 18:40:09 KST+0900: Train Loss: 0.6490 | Train Top1 Accuracy: 83.6689 | Train Top5 Accuracy: 95.3473
+2021-03-16 18:42:11 KST+0900: Validation Loss: 0.2127 | Validation Top1 Accuracy: 93.6924 | Validation Top5 Accuracy: 99.4188
+2021-03-16 19:05:29 KST+0900: Epoch 22/50 Complete | time per epoch: 0:25:20 | total eta: 11:24:21
+2021-03-16 19:05:29 KST+0900: Train Loss: 0.6327 | Train Top1 Accuracy: 84.0588 | Train Top5 Accuracy: 95.4973
+2021-03-16 19:07:33 KST+0900: Validation Loss: 0.1801 | Validation Top1 Accuracy: 94.5163 | Validation Top5 Accuracy: 99.5872
+2021-03-16 19:30:34 KST+0900: Epoch 23/50 Complete | time per epoch: 0:25:20 | total eta: 10:58:42
+2021-03-16 19:30:34 KST+0900: Train Loss: 0.6341 | Train Top1 Accuracy: 83.9982 | Train Top5 Accuracy: 95.5018
+2021-03-16 19:32:37 KST+0900: Validation Loss: 0.2339 | Validation Top1 Accuracy: 93.2892 | Validation Top5 Accuracy: 99.1721
+2021-03-16 19:55:49 KST+0900: Epoch 24/50 Complete | time per epoch: 0:25:19 | total eta: 10:33:17
+2021-03-16 19:55:49 KST+0900: Train Loss: 0.6183 | Train Top1 Accuracy: 84.3849 | Train Top5 Accuracy: 95.6300
+2021-03-16 19:57:53 KST+0900: Validation Loss: 0.1755 | Validation Top1 Accuracy: 94.6890 | Validation Top5 Accuracy: 99.5837
+2021-03-16 20:21:04 KST+0900: Epoch 25/50 Complete | time per epoch: 0:25:19 | total eta: 10:7:53
+2021-03-16 20:21:04 KST+0900: Train Loss: 0.6199 | Train Top1 Accuracy: 84.3599 | Train Top5 Accuracy: 95.6166
+2021-03-16 20:23:09 KST+0900: Validation Loss: 0.2041 | Validation Top1 Accuracy: 93.9988 | Validation Top5 Accuracy: 99.4579
+2021-03-16 20:46:16 KST+0900: Epoch 26/50 Complete | time per epoch: 0:25:19 | total eta: 9:42:27
+2021-03-16 20:46:16 KST+0900: Train Loss: 0.6190 | Train Top1 Accuracy: 84.3873 | Train Top5 Accuracy: 95.6396
+2021-03-16 20:48:23 KST+0900: Validation Loss: 0.2123 | Validation Top1 Accuracy: 93.7908 | Validation Top5 Accuracy: 99.3313
+2021-03-16 21:11:29 KST+0900: Epoch 27/50 Complete | time per epoch: 0:25:19 | total eta: 9:17:2
+2021-03-16 21:11:29 KST+0900: Train Loss: 0.6044 | Train Top1 Accuracy: 84.6627 | Train Top5 Accuracy: 95.7882
+2021-03-16 21:13:36 KST+0900: Validation Loss: 0.2376 | Validation Top1 Accuracy: 93.2127 | Validation Top5 Accuracy: 99.1392
+2021-03-16 21:36:42 KST+0900: Epoch 28/50 Complete | time per epoch: 0:25:18 | total eta: 8:51:38
+2021-03-16 21:36:42 KST+0900: Train Loss: 0.6053 | Train Top1 Accuracy: 84.6875 | Train Top5 Accuracy: 95.7597
+2021-03-16 21:38:48 KST+0900: Validation Loss: 0.1795 | Validation Top1 Accuracy: 94.5633 | Validation Top5 Accuracy: 99.5683
+2021-03-16 22:01:49 KST+0900: Epoch 29/50 Complete | time per epoch: 0:25:18 | total eta: 8:26:11
+2021-03-16 22:01:49 KST+0900: Train Loss: 0.5930 | Train Top1 Accuracy: 84.9384 | Train Top5 Accuracy: 95.8716
+2021-03-16 22:03:57 KST+0900: Validation Loss: 0.1768 | Validation Top1 Accuracy: 94.6095 | Validation Top5 Accuracy: 99.5652
+2021-03-16 22:27:09 KST+0900: Epoch 30/50 Complete | time per epoch: 0:25:18 | total eta: 8:0:54
+2021-03-16 22:27:09 KST+0900: Train Loss: 0.5942 | Train Top1 Accuracy: 84.9307 | Train Top5 Accuracy: 95.8524
+2021-03-16 22:29:22 KST+0900: Validation Loss: 0.1784 | Validation Top1 Accuracy: 94.5312 | Validation Top5 Accuracy: 99.6171
+2021-03-16 22:52:34 KST+0900: Epoch 31/50 Complete | time per epoch: 0:25:18 | total eta: 7:35:38
+2021-03-16 22:52:34 KST+0900: Train Loss: 0.5950 | Train Top1 Accuracy: 84.9202 | Train Top5 Accuracy: 95.8655
+2021-03-16 22:54:43 KST+0900: Validation Loss: 0.2075 | Validation Top1 Accuracy: 93.9728 | Validation Top5 Accuracy: 99.3621
+2021-03-16 23:17:44 KST+0900: Epoch 32/50 Complete | time per epoch: 0:25:18 | total eta: 7:10:15
+2021-03-16 23:17:44 KST+0900: Train Loss: 0.5810 | Train Top1 Accuracy: 85.2452 | Train Top5 Accuracy: 95.9811
+2021-03-16 23:19:54 KST+0900: Validation Loss: 0.2024 | Validation Top1 Accuracy: 93.9663 | Validation Top5 Accuracy: 99.4649
+2021-03-16 23:43:05 KST+0900: Epoch 33/50 Complete | time per epoch: 0:25:18 | total eta: 6:44:58
+2021-03-16 23:43:05 KST+0900: Train Loss: 0.5831 | Train Top1 Accuracy: 85.1998 | Train Top5 Accuracy: 95.9553
+2021-03-16 23:45:17 KST+0900: Validation Loss: 0.2093 | Validation Top1 Accuracy: 93.9276 | Validation Top5 Accuracy: 99.3177
+2021-03-17 00:08:25 KST+0900: Epoch 34/50 Complete | time per epoch: 0:25:18 | total eta: 6:19:40
+2021-03-17 00:08:25 KST+0900: Train Loss: 0.5664 | Train Top1 Accuracy: 85.5721 | Train Top5 Accuracy: 96.0946
+2021-03-17 00:10:38 KST+0900: Validation Loss: 0.2072 | Validation Top1 Accuracy: 93.9597 | Validation Top5 Accuracy: 99.3599
+2021-03-17 00:33:48 KST+0900: Epoch 35/50 Complete | time per epoch: 0:25:18 | total eta: 5:54:23
+2021-03-17 00:33:48 KST+0900: Train Loss: 0.5710 | Train Top1 Accuracy: 85.4430 | Train Top5 Accuracy: 96.0868
+2021-03-17 00:36:00 KST+0900: Validation Loss: 0.1865 | Validation Top1 Accuracy: 94.5840 | Validation Top5 Accuracy: 99.4122
+2021-03-17 00:59:00 KST+0900: Epoch 36/50 Complete | time per epoch: 0:25:18 | total eta: 5:29:1
+2021-03-17 00:59:00 KST+0900: Train Loss: 0.5587 | Train Top1 Accuracy: 85.7440 | Train Top5 Accuracy: 96.1802
+2021-03-17 01:01:10 KST+0900: Validation Loss: 0.1895 | Validation Top1 Accuracy: 94.4477 | Validation Top5 Accuracy: 99.3898
+2021-03-17 01:24:13 KST+0900: Epoch 37/50 Complete | time per epoch: 0:25:18 | total eta: 5:3:41
+2021-03-17 01:24:13 KST+0900: Train Loss: 0.5596 | Train Top1 Accuracy: 85.7283 | Train Top5 Accuracy: 96.1562
+2021-03-17 01:26:25 KST+0900: Validation Loss: 0.1667 | Validation Top1 Accuracy: 94.9862 | Validation Top5 Accuracy: 99.6039
+2021-03-17 01:49:32 KST+0900: Epoch 38/50 Complete | time per epoch: 0:25:18 | total eta: 4:38:23
+2021-03-17 01:49:32 KST+0900: Train Loss: 0.5590 | Train Top1 Accuracy: 85.7631 | Train Top5 Accuracy: 96.1831
+2021-03-17 01:51:45 KST+0900: Validation Loss: 0.1744 | Validation Top1 Accuracy: 94.7928 | Validation Top5 Accuracy: 99.5120
+2021-03-17 02:14:51 KST+0900: Epoch 39/50 Complete | time per epoch: 0:25:18 | total eta: 4:13:4
+2021-03-17 02:14:51 KST+0900: Train Loss: 0.5492 | Train Top1 Accuracy: 85.9533 | Train Top5 Accuracy: 96.2659
+2021-03-17 02:17:01 KST+0900: Validation Loss: 0.1477 | Validation Top1 Accuracy: 95.4804 | Validation Top5 Accuracy: 99.6804
+2021-03-17 02:40:13 KST+0900: Epoch 40/50 Complete | time per epoch: 0:25:18 | total eta: 3:47:47
+2021-03-17 02:40:13 KST+0900: Train Loss: 0.5482 | Train Top1 Accuracy: 85.9829 | Train Top5 Accuracy: 96.2746
+2021-03-17 02:42:26 KST+0900: Validation Loss: 0.1917 | Validation Top1 Accuracy: 94.3404 | Validation Top5 Accuracy: 99.4755
+2021-03-17 03:05:24 KST+0900: Epoch 41/50 Complete | time per epoch: 0:25:18 | total eta: 3:22:27
+2021-03-17 03:05:24 KST+0900: Train Loss: 0.5360 | Train Top1 Accuracy: 86.2402 | Train Top5 Accuracy: 96.3866
+2021-03-17 03:07:35 KST+0900: Validation Loss: 0.1521 | Validation Top1 Accuracy: 95.3956 | Validation Top5 Accuracy: 99.6144
+2021-03-17 03:30:34 KST+0900: Epoch 42/50 Complete | time per epoch: 0:25:18 | total eta: 2:57:7
+2021-03-17 03:30:34 KST+0900: Train Loss: 0.5394 | Train Top1 Accuracy: 86.2085 | Train Top5 Accuracy: 96.3371
+2021-03-17 03:32:43 KST+0900: Validation Loss: 0.1653 | Validation Top1 Accuracy: 95.1282 | Validation Top5 Accuracy: 99.5366
+2021-03-17 03:55:48 KST+0900: Epoch 43/50 Complete | time per epoch: 0:25:18 | total eta: 2:31:48
+2021-03-17 03:55:48 KST+0900: Train Loss: 0.5397 | Train Top1 Accuracy: 86.1904 | Train Top5 Accuracy: 96.3317
+2021-03-17 03:57:58 KST+0900: Validation Loss: 0.1800 | Validation Top1 Accuracy: 94.5264 | Validation Top5 Accuracy: 99.5058
+2021-03-17 04:20:58 KST+0900: Epoch 44/50 Complete | time per epoch: 0:25:17 | total eta: 2:6:29
+2021-03-17 04:20:58 KST+0900: Train Loss: 0.5283 | Train Top1 Accuracy: 86.4348 | Train Top5 Accuracy: 96.4433
+2021-03-17 04:23:09 KST+0900: Validation Loss: 0.1424 | Validation Top1 Accuracy: 95.7477 | Validation Top5 Accuracy: 99.6689
+2021-03-17 04:46:07 KST+0900: Epoch 45/50 Complete | time per epoch: 0:25:17 | total eta: 1:41:10
+2021-03-17 04:46:07 KST+0900: Train Loss: 0.5280 | Train Top1 Accuracy: 86.4452 | Train Top5 Accuracy: 96.4493
+2021-03-17 04:48:18 KST+0900: Validation Loss: 0.1468 | Validation Top1 Accuracy: 95.5837 | Validation Top5 Accuracy: 99.6250
+2021-03-17 05:11:24 KST+0900: Epoch 46/50 Complete | time per epoch: 0:25:17 | total eta: 1:15:53
+2021-03-17 05:11:24 KST+0900: Train Loss: 0.5168 | Train Top1 Accuracy: 86.7022 | Train Top5 Accuracy: 96.5367
+2021-03-17 05:13:36 KST+0900: Validation Loss: 0.1575 | Validation Top1 Accuracy: 95.2135 | Validation Top5 Accuracy: 99.5801
+2021-03-17 05:36:35 KST+0900: Epoch 47/50 Complete | time per epoch: 0:25:17 | total eta: 0:50:35
+2021-03-17 05:36:35 KST+0900: Train Loss: 0.5191 | Train Top1 Accuracy: 86.6501 | Train Top5 Accuracy: 96.5147
+2021-03-17 05:38:46 KST+0900: Validation Loss: 0.1674 | Validation Top1 Accuracy: 94.9031 | Validation Top5 Accuracy: 99.5212
+2021-03-17 06:01:48 KST+0900: Epoch 48/50 Complete | time per epoch: 0:25:17 | total eta: 0:25:17
+2021-03-17 06:01:48 KST+0900: Train Loss: 0.5092 | Train Top1 Accuracy: 86.8763 | Train Top5 Accuracy: 96.6058
+2021-03-17 06:03:59 KST+0900: Validation Loss: 0.1792 | Validation Top1 Accuracy: 94.6987 | Validation Top5 Accuracy: 99.4979
+2021-03-17 06:27:00 KST+0900: Epoch 49/50 Complete | time per epoch: 0:25:17 | total eta: 0:0:0
+2021-03-17 06:27:00 KST+0900: Train Loss: 0.5112 | Train Top1 Accuracy: 86.8321 | Train Top5 Accuracy: 96.5770
+2021-03-17 06:29:08 KST+0900: Validation Loss: 0.1826 | Validation Top1 Accuracy: 94.6754 | Validation Top5 Accuracy: 99.4443
+2021-03-17 06:31:43 KST+0900: Test Loss: 0.1428 | Test Top1 Accuracy: 95.6607 | Test Top5 Accuracy: 99.6893
+2021-03-17 06:33:31 KST+0900: Test Loss: 0.1501 | Test Top1 Accuracy: 95.3588 | Test Top5 Accuracy: 99.6623
+2021-03-17 06:35:21 KST+0900: Test Loss: 0.1810 | Test Top1 Accuracy: 94.7331 | Test Top5 Accuracy: 99.4703

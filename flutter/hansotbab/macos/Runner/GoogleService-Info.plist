@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5a7767f19978df854a7df98e6052bc145b53aedf90c21d858ddc461cb714456
-size 887
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBAO9C2_0SxCNvGm598Cmy2HR8iZbBBUXk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>714780267237</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.hansotbab.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>hansotbab-alarm</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hansotbab-alarm.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:714780267237:ios:a5ce30157f5fd5aa0e7a0c</string>
+</dict>
+</plist>

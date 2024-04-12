@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2b3e5ad09b9c81840e096a60beafa12a06d563600b7c48bc3916dcacc4fda84
-size 618
+package com.b209.hansotbab.user.dto.request;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.io.Serializable;
+
+@Getter
+public class RegisterRequestDTO implements Serializable {
+
+    private final String uniqueId;
+    private final String email;
+    private final String nickname;
+    private final String profileImgUrl;
+
+    @Builder
+    public RegisterRequestDTO(String uniqueId, String email, String nickname, String profileImgUrl) {
+        this.uniqueId = uniqueId;
+        this.email = email;
+        this.nickname = nickname;
+        this.profileImgUrl = profileImgUrl;
+    }
+}

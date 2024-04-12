@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a42ea35f4a618847b20eee925a570588f5cef330176baa43dbe093d806d6954
-size 919
+package com.b209.hansotbab.fridge.entity;
+
+import com.b209.hansotbab.global.entity.BaseTimeEntity;
+import com.b209.hansotbab.user.entity.User;
+import jakarta.persistence.*;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import static jakarta.persistence.FetchType.LAZY;
+
+@Entity
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class FridgeLike extends BaseTimeEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long fridgeLikesId;
+
+    @ManyToOne(fetch = LAZY )
+    @JoinColumn(name = "fridge_id")
+    private Fridge fridge;
+
+    @ManyToOne(fetch = LAZY )
+    @JoinColumn(name = "user_uuid")
+    private User user;
+
+    @Builder
+    public FridgeLike(Long fridgeLikesId, Fridge fridge, User user) {
+        this.fridgeLikesId = fridgeLikesId;
+        this.fridge = fridge;
+        this.user = user;
+    }
+}

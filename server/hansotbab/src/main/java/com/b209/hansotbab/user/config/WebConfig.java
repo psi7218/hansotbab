@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:718d9d0c6735e7d48be637ff72d587e551208e1cee43554c991bcffc072cdefb
-size 657
+package com.b209.hansotbab.user.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+
+    public static final String ALLOWED_METHOD_NAMES = "GET,HEAD,POST,PUT,DELETE,TRACE,OPTIONS,PATCH";
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedMethods(ALLOWED_METHOD_NAMES.split(","))
+                .allowedOrigins("http://localhost:5173");
+    }
+}

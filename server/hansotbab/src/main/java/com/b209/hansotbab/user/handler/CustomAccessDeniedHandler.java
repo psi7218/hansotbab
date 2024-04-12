@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61d5f0640d91e7fa992879b61529a1551dd02f79be437b0a4ea555166511d360
-size 964
+package com.b209.hansotbab.user.handler;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.web.access.AccessDeniedHandler;
+import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+
+@Slf4j
+@Component
+public class CustomAccessDeniedHandler implements AccessDeniedHandler {
+
+    @Override
+    public void handle(HttpServletRequest request, HttpServletResponse response,
+                       AccessDeniedException accessDeniedException) throws IOException, ServletException {
+
+        log.error("Unauthorized Request", accessDeniedException);
+        log.error("Request Uri : {}", request.getRequestURI());
+
+        response.sendError(403, accessDeniedException.getLocalizedMessage());
+    }
+}

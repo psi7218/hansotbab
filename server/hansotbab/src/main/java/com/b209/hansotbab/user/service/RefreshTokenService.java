@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f415a82d3f1344f6ca4b9a447234737f02ec22a6fa9960f8a35e5d7797616d1
-size 626
+package com.b209.hansotbab.user.service;
+
+import com.b209.hansotbab.user.repository.TokenRepository;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
+
+@Slf4j
+@Service
+public class RefreshTokenService {
+
+    private final TokenRepository tokenRepository;
+
+    public RefreshTokenService(TokenRepository tokenRepository) {
+        this.tokenRepository = tokenRepository;
+    }
+
+    public void saveRefreshToken(String uuid, String refreshToken) {
+        tokenRepository.saveRefreshToken(uuid, refreshToken);
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09fd68dbf60995bab31b66c287318ce5e04351d1371233bf565b539c52a6611e
-size 688
+package com.b209.hansotbab.user.util;
+
+import com.b209.hansotbab.user.entity.UserPrincipal;
+import com.b209.hansotbab.user.exception.NotAuthenticactedException;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+
+public class AuthUtils {
+
+    public static String getCurrentUserId() {
+        final UserPrincipal principal = (UserPrincipal) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        if(principal == null || principal.getUsername() == null) {
+            throw new NotAuthenticactedException();
+        }
+
+        return principal.getUsername();
+    }
+}

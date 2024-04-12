@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffb91695239d97bce7e11ee191c33ef9bbfa98b36528dc51c9d9b4e713ea4455
-size 1100
+import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+
+class ImagePickerWidget extends StatefulWidget {
+  const ImagePickerWidget({super.key});
+
+  @override
+  _ImagePickerWidgetState createState() => _ImagePickerWidgetState();
+}
+
+class _ImagePickerWidgetState extends State<ImagePickerWidget> {
+  File? _image;
+
+  Future<void> _pickImage() async {
+    final pickedFile =
+        await ImagePicker().pickImage(source: ImageSource.gallery);
+
+    if (pickedFile != null) {
+      setState(() {
+        _image = File(pickedFile.path);
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: _pickImage,
+      child: CircleAvatar(
+        radius: 60, // Adjust the size as needed
+        backgroundImage: _image != null
+            ? FileImage(_image!)
+            : const AssetImage('assets/nang.png') as ImageProvider,
+        child: _image == null
+            ? const Icon(
+                Icons.add_a_photo,
+                size: 50,
+              )
+            : null,
+      ),
+    );
+  }
+}

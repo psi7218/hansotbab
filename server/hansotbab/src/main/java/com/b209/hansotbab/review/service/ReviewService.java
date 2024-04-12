@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:995059866e46b87f1d777212e06012379ad9178681e62a9f60ab0e7e2679fc3b
-size 973
+package com.b209.hansotbab.review.service;
+
+import com.b209.hansotbab.review.dto.request.ReviewLikeRequestDTO;
+import com.b209.hansotbab.review.dto.request.ReviewRequestDTO;
+import com.b209.hansotbab.review.dto.response.ReviewResponseDTO;
+
+import java.util.List;
+import java.util.UUID;
+
+public interface ReviewService {
+
+    List<ReviewResponseDTO> findAllReview(Long fridgeId, UUID uuid);
+
+    ReviewResponseDTO findReviewInfo(Long reviewId, UUID uuid);
+
+    void createReview(Long productId, ReviewRequestDTO reviewRequestDTO, UUID uuid);
+
+    void updateReview(Long reviewId, ReviewRequestDTO reviewRequestDTO, UUID uuid);
+
+    void deleteReview(Long reviewId, UUID uuid);
+
+    boolean updateReviewLike(ReviewLikeRequestDTO reviewLikeRequestDTO);
+
+    void validateReviewRequiredFields(ReviewRequestDTO reviewRequestDTO);
+    List<ReviewResponseDTO> findUserReview(UUID uuid);
+
+    void createFridgeReview(Long fridgeId, ReviewRequestDTO reviewRequestDTO, UUID uuid);
+}

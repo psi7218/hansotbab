@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62810f9a0475aaa988dee876aa287451c9bead6eb84d7bbb445bfc7cac52b7ca
-size 1258
+package com.b209.hansotbab.fridge.dto.response;
+
+import com.b209.hansotbab.fridge.entity.Fridge;
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+public class FridgeListResponseDTO {
+
+    private final Long fridgeId;
+    private final Integer fridgeNumber;
+    private final String fridgeLocationName;
+    private final String fridgeLocationAddress;
+    private final Long fridgeDonated;
+
+    @Builder
+    public FridgeListResponseDTO(Long fridgeId, Integer fridgeNumber, String fridgeLocationName, String fridgeLocationAddress, Long fridgeDonated) {
+        this.fridgeId = fridgeId;
+        this.fridgeNumber = fridgeNumber;
+        this.fridgeLocationName = fridgeLocationName;
+        this.fridgeLocationAddress = fridgeLocationAddress;
+        this.fridgeDonated = fridgeDonated;
+    }
+
+    public static FridgeListResponseDTO fromEntity(Fridge fridge, Long fridgeDonated) {
+        return FridgeListResponseDTO.builder()
+                .fridgeId(fridge.getFridgeId())
+                .fridgeNumber(fridge.getFridgeNumber())
+                .fridgeLocationName(fridge.getFridgeLocationName())
+                .fridgeLocationAddress(fridge.getFridgeLocationAddress())
+                .fridgeDonated(fridgeDonated)
+                .build();
+    }
+}

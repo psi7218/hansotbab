@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83be700ae84e252652cb90c38c921b670bb7101986c7f46d28cbbe6534e239d9
-size 688
+package com.b209.hansotbab.food.entity;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.elasticsearch.annotations.Document;
+
+import java.lang.annotation.Documented;
+
+@Document(indexName = "auto_test")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Getter
+public class ElasticSearchItems {
+    @Id
+    private String id;
+
+    private String code;
+
+    private String name;
+
+    private String cat;
+
+    private String cat1;
+
+    private String cat2;
+}

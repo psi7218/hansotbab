@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07cebe484390ccbd912739be310543eb908f4576c3d5d9e4caa7d58f3ef36d0b
-size 529
+package com.b209.hansotbab.user.entity;
+
+import lombok.Getter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed;
+
+import java.util.UUID;
+
+@Getter
+@RedisHash
+public class RefreshToken {
+
+    @Id
+    private String uuid;
+    private String refreshToken;
+
+    public RefreshToken(UUID uuid, String refreshToken) {
+        this.uuid = uuid.toString();
+        this.refreshToken = refreshToken;
+    }
+}

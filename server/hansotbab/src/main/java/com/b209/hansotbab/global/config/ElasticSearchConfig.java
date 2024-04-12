@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b401194a242bea4ad9e582a06308b1b7d2b90572306e2c1edb43c03721bd4199
-size 739
+package com.b209.hansotbab.global.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.elasticsearch.client.*;
+import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfiguration;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
+
+@Configuration
+public class ElasticSearchConfig extends ElasticsearchConfiguration {
+
+    @Value("${spring.elasticsearch.uris}")
+    private String uris;
+    @Override
+    public ClientConfiguration clientConfiguration() {
+        return ClientConfiguration.builder()
+                .connectedTo(uris)
+                .build();
+    }
+}

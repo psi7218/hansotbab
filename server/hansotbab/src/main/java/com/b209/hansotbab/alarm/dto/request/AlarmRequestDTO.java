@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3911a8e82d7371a5baaf7d7a36ac78feb5fecaabd01179c9de8657c7ad7d4e54
-size 553
+package com.b209.hansotbab.alarm.dto.request;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+/**
+ * 실제 firebase를 통해 알림을 동작할 때 사용하는 DTO
+ */
+@Getter
+@NoArgsConstructor
+public class AlarmRequestDTO {
+    private String targetUserEmail;
+    private String title;
+    private String body;
+
+
+    @Builder
+    public AlarmRequestDTO(String targetUserEmail, String title, String body){
+        this.targetUserEmail = targetUserEmail;
+        this.title = title;
+        this.body = body;
+    }
+}
