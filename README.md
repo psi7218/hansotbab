@@ -1,7 +1,9 @@
 # 내 손안의 공유 냉장고로 마음을 나눠요 : 한솥밥 :yellow_heart:
-![메인페이지](https://github.com/blacklabf/joblog/assets/108640460/55a3b5d2-291d-4d75-affd-170b12d9e463)
+
+![메인페이지](https://github.com/blacklabf/hansotbab/assets/108640460/0997ee99-889c-4a9d-9599-4baf4da77b34)
 
 ## 목차
+
 [1. 프로젝트 개요](#1️⃣-프로젝트-개요)<br>
 [2. 주요 기능](#two-주요-기능)<br>
 [3. 화면 설명](#three-화면-설명)<br>
@@ -13,12 +15,14 @@
 [9. 팀 소개](#nine-팀-소개)<br>
 <br><br>
 
-
 ## 1️⃣ 프로젝트 개요
+
 ### 프로젝트 소개
-> <span style="font-size:125%; font-weight:bold;">"한솥밥 "은 공유냉장고를 통해 시민들 간의 자발적인 음식 나눔을 촉진하고, 음식 낭비를 줄이는 서비스입니다.</span>  
+
+> <span style="font-size:125%; font-weight:bold;">"한솥밥 "은 공유냉장고를 통해 시민들 간의 자발적인 음식 나눔을 촉진하고, 음식 낭비를 줄이는 서비스입니다.</span>
 
 ### 프로젝트 진행 기간
+
 <details style="margin-left: 5px;">
 <summary><strong>전체 일정 : 2024.02.26 ~ 2024.04.04 (약 6주)</strong></summary>
 <div>
@@ -33,96 +37,123 @@
 </details>
 <br><br>
 
-## :two: 주요 기능 
+## :two: 주요 기능
+
 ### 💡 음식 기부하기
+
 - 사용자들은 손쉽게 음식을 기부할 수 있습니다.
 - 이미지 인식으로 상품명과 대분류가 자동으로 입력됩니다.
 - 기부 음식명을 입력할 때 추천 검색어를 통해 원활한 등록이 가능합니다.
+
 ### 💡 음식 가져가기
+
 - 공유 냉장고안의 상품 리스트를 확인하고 가져갈 수 있습니다.
 - 음식을 가져간 후 다음 사용자를 위해 재고 가능성을 선택한 것과 가져간 인원수를 바탕으로 재고 예측을 해줍니다.
+
 ### 💡 감사인사 나누기 및 위시리스트 작성
+
 - 감사인사를 남겨 기부자에게 마음을 전달할 수 있습니다
 - 봉사자와 기부자들의 원동력을 제공합니다.
 - 사용자들의 접근성을 향상하고 기부를 독려합니다.
+
 ### 💡 알림 기능
+
 - 즐겨찾기한 냉장고에 새로운 음식이 기부되었을 때 알림을 받을 수 있습니다.
 - 기부한 음식에 리뷰를 받으면 알림을 통해 확인할 수 있습니다.
-<br><br>
+  <br><br>
 
 ## :three: 화면 설명
+
 <table>
     <tr height="140px">
         <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/1ea043c7-1af7-4f5b-94ad-25614f0ef3e8"/></td>
         <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/3f7b1f8a-c147-4a2e-a202-c63fdbaf0a42"/></td>
-        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/81e86de9-f34c-4310-9205-bb9286513d47"/></td>
-        <td align="center" ><img width="300px" src="https://github.com/blacklabf/joblog/assets/108640460/20e36918-9cea-4458-8570-10fd01d531c2"/></td>
+      <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/b6a972fb-a294-4456-a223-3e6d08bb97e3"/> </td>
     <tr/>
     <tr>
        <td align="center">🔼 메인페이지</td>
        <td align="center">🔼 냉장고 탭 이동</td>
-       <td align="center">🔼 음식 등록시, <br>음식명 자동완성</td>
-       <td align="center">🔼 음식등록시, <br>검색어 자동완성</td>
+                  <td align="center">🔼 가져가기 및 감사인사</td>
+
     </tr>
+
 </table>
 <br><br>
 <table>
     <tr height="140px">
-        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/b6a972fb-a294-4456-a223-3e6d08bb97e3"/> </td>
+        <td align="center" ><img width="300px" src="https://github.com/blacklabf/hansotbab/assets/108640460/d90904f3-1199-43b5-b2be-dfbae06141ce"/></td>
+        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/81e86de9-f34c-4310-9205-bb9286513d47"/></td>
         <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/6797396a-6820-4f02-b756-527c0e33a577"/> </td>
-        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/2e24e230-5d0d-4d70-871b-6878fc643a46"/> </td>
-        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/cd2de631-eda1-410c-81a7-358a3a537617"/> </td>
     <tr/>
     <tr>
-       <td align="center">🔼 가져가기 및 감사인사</td>
+       <td align="center">🔼 음식등록시, <br>검색어 자동완성</td>
+       <td align="center">🔼 음식 등록시, <br>음식명 자동완성</td>
        <td align="center">🔼 감사알림</td>
+    </tr>
+</table>
+<br></br>
+<table>
+    <tr height="140px"> 
+        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/2e24e230-5d0d-4d70-871b-6878fc643a46"/> </td>
+        <td align="center" ><img width="300px" src="https://github.com/blacklabf/springboot-study/assets/108640460/cd2de631-eda1-410c-81a7-358a3a537617"/> </td>
+                <td align="center" ><img width="300px" src="https://github.com/blacklabf/hansotbab/assets/108640460/762cec73-dc63-400c-b847-59d7ac6f0bde"/> </td>
+    <tr/>
+    <tr>
        <td align="center">🔼 즐겨찾기 및 <br>음식등록알림</td>
        <td align="center">🔼 감사인사 및 위시리스트</td>
+              <td align="center">🔼 기부 횟수에 따른 레벨증가</td>
     </tr>
 </table>
 <br><br>
 
-
 ## :four: 기술 소개
+
 ### ⭐ AI
+
 - 이미지 분류 모델(efficientnet b0)을 이용한 상품 이미지 분류
 - FastAPI로 모델서빙
 
 ### ⭐ 실시간 알림
+
 - 백그라운드, 포그라운드, 절전상태에서도 즉각적인 알림
-- 배터리 낭비 최소화 
+- 배터리 낭비 최소화
 - firebase Cloud Messaging 으로 구현
 
 ### ⭐ Elastic Search & Kibana
+
 - Elastic Search
-    - ElasticSearch를 사용하여 음식 빅데이터의  자동완성기능을 더 빠르고 정확하게 구현
-    - match 쿼리에 fuzziness 설정을 통해서 검색시 오타보정
+  - ElasticSearch를 사용하여 음식 빅데이터의 자동완성기능을 더 빠르고 정확하게 구현
+  - match 쿼리에 fuzziness 설정을 통해서 검색시 오타보정
 - Kibana
-    - Elastic Search에 저장된 데이터를 시각화해서 확인
-    - console에서 자동완성기능을 위한 index를 생성 및 설정
+  - Elastic Search에 저장된 데이터를 시각화해서 확인
+  - console에서 자동완성기능을 위한 index를 생성 및 설정
 
 ### ⭐ DevOps
+
 - Jenkins를 활용한 CI/CD 파이프라인 구축
 - Gitlab Webhook을 이용한 자동 빌드 환경(CI) 구축
 - 파이프라인 코드 및 쉘 스크립트 작성으로 자동 배포 환경(CD) 구축
 - SonarQube를 활용한 정적 분석
 
 ### ⭐ 빅데이터 분산 및 처리
+
 - Hadoop & Spark를 활용해 이미지와 정보를 저장하고 분산하여 모델 학습 및 냉장고마다 기부수를 통계
 
 ### ⭐ FrontEnd
-- dart기반 flutter를 통해 프로젝트 진행 
+
+- dart기반 flutter를 통해 프로젝트 진행
 - SharedPreferences를 통해 로컬Storage 관리
 
 <br><br>
 
-
 ## :five: 시스템 아키텍처
-![시스템아키텍쳐](https://github.com/blacklabf/joblog/assets/108640460/98d59c19-7e96-4ad8-ba27-bcab2cb5bb30)
+
+![시스템아키텍쳐](https://github.com/blacklabf/hansotbab/assets/108640460/f12389b6-6f45-4835-81e7-632dcc64e809)
 
 <br><br>
 
 ## :six: 파일 구조
+
 <details  style="margin-left: 5px;">
 <summary><b>server</b></summary>
 <div>
@@ -394,6 +425,7 @@
  ┣ 📜pubspec.yaml
 
 ```
+
 </div>
 </details>
 <br>
@@ -460,8 +492,8 @@
 </details>
 <br>
 
-
 ## :seven: 기술 스택
+
 <div style="display:flex; flex-direction:column; align-items:flex-start;">
     <p><strong>⚡ Management Tool</stron-g></p>
     <div>
@@ -543,23 +575,28 @@
 ## :eight: 문서
 
 ### 📂ERD
-![erd](https://github.com/blacklabf/joblog/assets/108640460/b6e0a9c5-85de-4e78-9aff-0e0f3da25183)
+
+![erd](https://github.com/blacklabf/hansotbab/assets/108640460/8137eabb-db94-46c3-8742-f604b9de17f2)
 
 ### 📂기능명세서
-<img src="https://github.com/blacklabf/joblog/assets/108640460/88931eeb-b185-4ab3-a96d-ad43050a1266" width="400" />
-<img src="https://github.com/blacklabf/joblog/assets/108640460/7c235404-27cd-4672-a9e6-f3c78df488e9" width="400" />
+
+<img src="https://github.com/blacklabf/hansotbab/assets/108640460/c038f7f5-1f54-4507-942e-fd2a9116fcce" width="400" />
+<img src="https://github.com/blacklabf/hansotbab/assets/108640460/6ecacaab-d7cf-4a7a-a8c8-515f140a9031" width="400" />
 
 ### 📂API 명세서
-<img src="https://github.com/blacklabf/joblog/assets/108640460/9cd8cb15-b26e-4143-8e66-e2974bab3b87" width="400" />
-<img src="https://github.com/blacklabf/joblog/assets/108640460/49d8b624-18f2-438a-be63-b1d1fbf1bd8f" width="400" />
+
+<img src="https://github.com/blacklabf/hansotbab/assets/108640460/0c16dc90-ded8-4888-a905-e9225843704d" width="400" />
+<img src="https://github.com/blacklabf/hansotbab/assets/108640460/2f06fbb2-17e2-4d5a-9e41-e41a6b961480" width="400" />
 
 ### 📂포팅메뉴얼
+
 :arrow_forward: [포팅 메뉴얼](/exec/포팅 매뉴얼 - 한솥밥ver2.pdf)
 
 ## :nine: 팀 소개
-|![박성인](https://github.com/blacklabf/joblog/assets/108640460/3c750499-96dd-4c25-9a3a-021f82c8908a)|![박정연](https://github.com/blacklabf/joblog/assets/108640460/8872ad2e-c6b2-4330-9cf9-37c442b3c994)|![방소영](https://github.com/blacklabf/joblog/assets/108640460/dbb7d63a-e372-45cd-a30e-4353f2bddecb)|![이지영](https://github.com/blacklabf/joblog/assets/108640460/1eb0dc41-d0cd-47c0-ad88-656167389117)|![이현영](https://github.com/blacklabf/joblog/assets/108640460/7834e422-ee00-4ba3-8033-abd17550b103)|![주동현](https://github.com/blacklabf/joblog/assets/108640460/a87149c6-376a-46f6-b4b2-c35f815c9f81)|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|박성인|박정연|방소영|이지영|이현영|주동현|
-|FrontEnd & Nginx|Backend & Hadoop & Spark|Leader & Backend & Alarm|DevOps & AI|BackEnd & ElasticSearch|Frontend|
-<br>
 
+| ![박성인](https://github.com/blacklabf/hansotbab/assets/108640460/c2441bcb-5b2f-44c3-8729-55ac0d446760) | ![박정연](https://github.com/blacklabf/hansotbab/assets/108640460/f469f8b8-5a47-4898-8298-221aedf38788) | ![방소영](https://github.com/blacklabf/hansotbab/assets/108640460/03c9ae3d-2100-49e1-bca1-dcdf2a24cc51) | ![이지영](https://github.com/blacklabf/hansotbab/assets/108640460/4dffa58d-e707-4837-89aa-23aafe9817ed) | ![이현영](https://github.com/blacklabf/hansotbab/assets/108640460/83dc97ad-0764-4587-a04d-ad8401de2a18) | ![주동현](https://github.com/blacklabf/hansotbab/assets/108640460/4c48bc1b-6187-42bc-8640-4cb03d9caa7f) |
+| :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+|                                                 박성인                                                  |                                                 박정연                                                  |                                                 방소영                                                  |                                                 이지영                                                  |                                                 이현영                                                  |                                                 주동현                                                  |
+|                                            FrontEnd & Nginx                                             |                                        Backend & Hadoop & Spark                                         |                                        Leader & Backend & Alarm                                         |                                               DevOps & AI                                               |                                         BackEnd & ElasticSearch                                         |                                                Frontend                                                 |
+
+<br>
