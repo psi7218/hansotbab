@@ -75,7 +75,7 @@
        <td align="center">🔼 냉장고 탭 이동</td>
                   <td align="center">🔼 가져가기 및 감사인사</td>
 
-    </tr>
+    
 
 </table>
 <br><br>
